@@ -1,0 +1,23 @@
+server:
+  port: 8060
+
+spring:
+  application:
+    name: wujiezull8060
+#eureka客户端注册到eureka服务端
+eureka:
+  client:
+    service-url:
+      #单击版eureka
+      #defaultZone: http://localhost:8000/eureka/
+      #集群版eureka
+      defaultZone: http://127.0.0.1:8011/eureka/,http://192.168.11.116:8012/eureka/,http://localhost:8013/eureka/
+  instance:
+    instance-id: www.xialezuul.com
+    prefer-ip-address: true
+info:
+  app.name : wujieprovoid8001
+  company.name: www.wujie.com
+  build.artifactId: $provider8001$
+  build.version: $0.0.1-SNAPSHOT$
+

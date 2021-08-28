@@ -1,0 +1,9 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: wujieconsumerfegin8040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8013/eureka/,http://127.0.0.1:8011/eureka/,http://192.168.11.111:8000/eureka/

@@ -1,0 +1,12 @@
+server:
+  port: 8012
+eureka:
+  instance:
+    hostname: 192.168.11.116
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:8011/eureka/,http://localhost:8013/eureka/
+
